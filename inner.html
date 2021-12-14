@@ -76,14 +76,34 @@
     <div class="header-section-wrapper">
       <nav class="navbar navbar-expand-lg navbar-light bg-light">
         <div class="container">
-          <a class="navbar-brand" href="./index.html"><img src="./assets/images/logo.svg" alt=""></a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <a class="navbar-brand" href="./index.html"
+            ><img src="./assets/images/logo.svg" alt=""
+          /></a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
             <span class="navbar-toggler-icon"></span>
           </button>
+          <!-- Nav Icon  -->
+          <div class="myicon">
+            <i
+              class="fa fa-bars menu-dots burgur"
+              id="sidebarCollapse"
+              aria-hidden="true"
+            ></i>
+            <span class="cross" id="cross"> × </span>
+          </div>
+          <!-- Nav Icon  -->
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav me-auto mb-2 mb-lg-0">
               <li class="nav-item">
-                <a class="nav-link"  href="#">News</a>
+                <a class="nav-link" href="#">News</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="#">Politics</a>
@@ -112,14 +132,36 @@
                 <a class="nav-link" href="#">Sports</a>
               </li>
             </ul>
-           <div class="phone-no d-flex">
-            <a href="tel:+82025291001">02-529-1001</a>
-           </div>
+            <div class="phone-no d-flex">
+              <a href="tel:+82025291001">02-529-1001</a>
+            </div>
           </div>
         </div>
       </nav>
     </div>
     <!-- Header Section  -->
+
+    <!-- Mobile Menu  -->
+    <div class="mobile-menu-wrapper">
+      <nav id="sidebar">
+        <div class="sidebar-header">
+          <a href="./index.html"><img src="./assets/images/logo.svg" alt=""></a>
+        </div>
+        <ul class="main-menu">
+          <li><a href="#">News</a></li>
+          <li><a href="#">Politics</a></li>
+          <li><a href="#">Business</a></li>
+          <li><a href="#">Health</a></li>
+          <li><a href="#">Entertainment</a></li>
+          <li><a href="#">Sports</a></li>
+        </ul>
+
+        <ul class="mobile-pnone">
+          <li><a href="tel:+82025291001">02-529-1001</a></li>
+        </ul>
+      </nav>
+    </div>
+    <!-- Mobile Menu  -->
 
     <!-- Single page Section  -->
         <div class="single-page-wrapper">

@@ -95,18 +95,13 @@ $('.cross').click(function () {
 // Mobile Menu 
 
 //Scroll
-const nav = document.querySelector(".header-inner");
+const nav = document.querySelector(".header-section-wrapper");
 const mmenu = document.querySelector(".menu-wrapper");
 let lastScrollY = window.scrollY;
 window.addEventListener("scroll", () => {
   if (lastScrollY < window.scrollY) {
-    if (mmenu.style.opacity == '1') {
-      nav.style.transform = "translateY(0px)";
-      nav.style.top = "0px";
-    } else {
       nav.style.transform = "translateY(-100px)";
       nav.style.top = "-100px";
-    }
   } else {
     nav.style.transform = "translateY(0px)";
     nav.style.top = "0px";
@@ -119,3 +114,61 @@ window.addEventListener("scroll", () => {
 function goBack() {
   window.history.back();
 }
+
+$("#sidebarCollapse").on("click", function () {
+  // $("#sidebar").toggleClass("mactive");
+  if ($("#sidebar").css("left") == "-250px") {
+      $("#sidebar").css({
+          left: "0px"
+      });
+      $(".burgur").css({
+          display: "none"
+      });
+      $(".cross").css({
+          display: "block"
+      });
+  } else {
+      $("#sidebar").css({
+          left: "-250px"
+      });
+  }
+});
+$("#cross").on("click", function () {
+  // $("#sidebar").toggleClass("mactive");
+  if ($("#sidebar").css("left") == "0px") {
+      $("#sidebar").css({
+          left: "-250px"
+      });
+      $(".burgur").css({
+          display: "block"
+      });
+      $(".cross").css({
+          display: "none"
+      });
+  } else {
+      $("#sidebar").css({
+          left: "-250px"
+      });
+  }
+});
+
+$(document).click(function (e) {
+  var container = $("#sidebar");
+  // If the target of the click isn't the container
+  if (!$("#sidebar").is(e.target) && $("#sidebar").has(e.target).length === 0) {
+      if ($("#sidebar").css("left") == "0px") {
+          $("#sidebar").css({
+              left: "-250px"
+          });
+          $(".burgur").css({
+              display: "block",
+              visibility: "visible",
+              opacity: "1"
+
+          });
+          $(".cross").css({
+              display: "none"
+          });
+      }
+  }
+});
