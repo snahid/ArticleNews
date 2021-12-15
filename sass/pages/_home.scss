@@ -718,6 +718,7 @@ body {
                     margin-bottom: 10px;
                     border-bottom: 1px solid rgba(19, 27, 49, 0.1);
                     padding-bottom: 7px;
+                    justify-content: space-between;
 
                     .admin {
                         margin-right: 10px;
@@ -725,9 +726,15 @@ body {
                         h6 {
                             margin-bottom: 0;
                             color: rgba(19, 27, 49, 0.8);
+                            @media(max-width: 370px){
+                                font-size: 15px;
+                            }
 
-                            span {
+                            .admin-name{
                                 font-style: italic;
+                                color: rgba(19, 27, 49, 1);
+                            }
+                            .newsname{
                                 color: rgba(19, 27, 49, 1);
                             }
                         }
@@ -738,6 +745,9 @@ body {
                             margin-bottom: 0;
                             color: #131B31;
                             color: rgba(19, 27, 49, 0.8);
+                            @media(max-width: 370px){
+                                font-size: 15px;
+                            }
 
                             span {
                                 color: rgba(19, 27, 49, 1);
@@ -873,6 +883,29 @@ body {
 
 // Single News Page 
 
+// Original news btn 
+.goto-originalnews-btn{
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    z-index: 3;
+    .goto-btn{
+        a{
+            text-decoration: none;
+            display: block;
+            text-align: center;
+            background-color: #df2d2d;
+            color: #ffffff;
+            font-weight: bold;
+            font-size: 18px;
+            padding: 17px 0;
+            animation: change 5s infinite;
+        }
+    }
+}
+// Original news btn 
+
 
 // Footer 
 .footer-wrapper {
@@ -905,7 +938,17 @@ body {
 
 
 
-
+@keyframes change {
+   0%{
+       background-color: #d42a4c;
+   }
+   50%{
+    background-color: #802323;
+   }
+   100%{
+       background-color: #df2d2d;
+   }
+}
 
 
 
