@@ -620,10 +620,6 @@ body {
   flex-direction: row;
   align-items: center;
 }
-.trending-news-wrapper .trending-inner-wrapper .trending-box-wrapper .trending-box-left .trending-box a .trending-box-inner .right-side .catogory-main-wrapper .category-time .category {
-  padding-right: 10px;
-  border-right: 2px solid rgba(19, 27, 49, 0.6);
-}
 .trending-news-wrapper .trending-inner-wrapper .trending-box-wrapper .trending-box-left .trending-box a .trending-box-inner .right-side .catogory-main-wrapper .category-time .category h6 {
   color: #009dff;
   text-transform: uppercase;
